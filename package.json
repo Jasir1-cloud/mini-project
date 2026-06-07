@@ -1,0 +1,48 @@
+{
+  "name": "cyberguard-academy-pro",
+  "version": "2.0.0",
+  "description": "Professional Cybersecurity Awareness Assessment Platform - Complete Learning & Training System",
+  "main": "server-pro.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server-pro.js",
+    "dev": "nodemon server-pro.js",
+    "test": "echo \"Testing CyberGuard Academy...\" && node server-pro.js",
+    "install-deps": "npm install",
+    "reset-db": "rm -f cyberguard.db && echo 'Database reset'",
+    "backup-db": "cp cyberguard.db cyberguard.backup.$(date +%Y%m%d_%H%M%S).db"
+  },
+  "keywords": [
+    "cybersecurity",
+    "awareness",
+    "training",
+    "phishing",
+    "quiz",
+    "education",
+    "assessment",
+    "professional"
+  ],
+  "author": "CyberGuard Academy Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyberguard-academy/platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cyberguard-academy/platform/issues"
+  },
+  "homepage": "https://cyberguardacademy.com"
+}
